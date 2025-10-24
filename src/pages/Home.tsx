@@ -4,6 +4,7 @@ import { QuickLinks } from "@/components/QuickLinks";
 import { NewsUpdates } from "@/components/NewsUpdates";
 import { EmployeeDirectory } from "@/components/EmployeeDirectory";
 import { FacilityDirectory } from "@/components/FacilityDirectory";
+import { DepartmentDirectory } from "@/components/DepartmentDirectory";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { AlertCircle } from "lucide-react";
 import heroBanner from "@/assets/hero-banner.jpg";
@@ -56,6 +57,7 @@ const Home = () => {
 
           {/* Right Column */}
           <div className="space-y-6">
+            <DepartmentDirectory />
             <EmployeeDirectory />
             <FacilityDirectory />
           </div>

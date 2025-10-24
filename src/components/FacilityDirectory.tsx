@@ -5,11 +5,14 @@ import { Button } from "./ui/button";
 import { Link } from "react-router-dom";
 
 const facilities = [
-  { name: "Arden Courts Annandale", city: "Annandale", state: "VA", region: "Region 3" },
-  { name: "Arden Courts Allentown", city: "Allentown", state: "PA", region: "Region 1" },
-  { name: "Arden Courts Bath", city: "Akron", state: "OH", region: "Region 1" },
-  { name: "Arden Courts Tampa", city: "Tampa", state: "FL", region: "Region 2" },
-  { name: "Arden Courts Sterling Heights", city: "Sterling Heights", state: "MI", region: "Region 4" },
+  { name: "Arden Courts Annandale", city: "Annandale", state: "VA", region: "Region 3", path: "/facility/annandale" },
+  { name: "Arden Courts Allentown", city: "Allentown", state: "PA", region: "Region 1", path: "/facility/allentown" },
+  { name: "Arden Courts Bath", city: "Akron", state: "OH", region: "Region 1", path: "/facility/bath" },
+  { name: "Arden Courts Tampa", city: "Tampa", state: "FL", region: "Region 2", path: "/facility/tampa" },
+  { name: "Arden Courts Sterling Heights", city: "Sterling Heights", state: "MI", region: "Region 4", path: "/facility/sterling" },
+  { name: "Arden Courts Westlake", city: "Westlake", state: "OH", region: "Region 1", path: "/facility/westlake" },
+  { name: "Arden Courts Parma", city: "Parma", state: "OH", region: "Region 1", path: "/facility/parma" },
+  { name: "Linden Village", city: "Lebanon", state: "PA", region: "Region 1", path: "/facility/linden" },
 ];
 
 export const FacilityDirectory = () => {
@@ -44,7 +47,7 @@ export const FacilityDirectory = () => {
                   </p>
                 </div>
               </div>
-              <Link to="/facility/annandale">
+              <Link to={facility.path}>
                 <Button variant="ghost" size="sm">
                   <ExternalLink className="h-4 w-4" />
                 </Button>
