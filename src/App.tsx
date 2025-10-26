@@ -9,6 +9,7 @@ import FacilityBath from "./pages/FacilityBath";
 import FacilityTampa from "./pages/FacilityTampa";
 import DepartmentHR from "./pages/DepartmentHR";
 import DepartmentIT from "./pages/DepartmentIT";
+import EmployeeDirectory from "./pages/EmployeeDirectory";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -26,6 +27,7 @@ const App = () => (
           <Route path="/facility/tampa" element={<FacilityTampa />} />
           <Route path="/departments/hr" element={<DepartmentHR />} />
           <Route path="/departments/it" element={<DepartmentIT />} />
+          <Route path="/employees" element={<EmployeeDirectory />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

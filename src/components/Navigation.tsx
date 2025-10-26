@@ -13,7 +13,7 @@ const navItems = [
   { icon: Home, label: "Home", path: "/" },
   { icon: Building2, label: "Facilities", path: "/facilities", hasDropdown: true },
   { icon: Briefcase, label: "Departments", path: "/departments", hasDropdown: true },
-  { icon: Users, label: "Employee Directory", path: "/directory" },
+  { icon: Users, label: "Employee Directory", path: "/employees" },
   { icon: FileText, label: "Documents", path: "/documents" },
 ];
 
