@@ -11,6 +11,7 @@ import AllFacilities from "./pages/AllFacilities";
 import DepartmentHR from "./pages/DepartmentHR";
 import DepartmentIT from "./pages/DepartmentIT";
 import EmployeeDirectory from "./pages/EmployeeDirectory";
+import Documents from "./pages/Documents";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -30,6 +31,7 @@ const App = () => (
           <Route path="/departments/hr" element={<DepartmentHR />} />
           <Route path="/departments/it" element={<DepartmentIT />} />
           <Route path="/employees" element={<EmployeeDirectory />} />
+          <Route path="/documents" element={<Documents />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

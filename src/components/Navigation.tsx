@@ -27,10 +27,10 @@ const departmentLinks = [
 ];
 
 const facilityLinks = [
+  { label: "View All Facilities", path: "/facilities" },
   { label: "Arden Courts Annandale", path: "/facility/annandale" },
   { label: "Arden Courts Bath", path: "/facility/bath" },
   { label: "Arden Courts Tampa", path: "/facility/tampa" },
-  { label: "View All Facilities", path: "/facilities" },
 ];
 
 export const Navigation = () => {
