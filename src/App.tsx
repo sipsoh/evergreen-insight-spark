@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import FacilityDetails from "./pages/FacilityDetails";
 import FacilityBath from "./pages/FacilityBath";
 import FacilityTampa from "./pages/FacilityTampa";
+import AllFacilities from "./pages/AllFacilities";
 import DepartmentHR from "./pages/DepartmentHR";
 import DepartmentIT from "./pages/DepartmentIT";
 import EmployeeDirectory from "./pages/EmployeeDirectory";
@@ -22,6 +23,7 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/facilities" element={<AllFacilities />} />
           <Route path="/facility/annandale" element={<FacilityDetails />} />
           <Route path="/facility/bath" element={<FacilityBath />} />
           <Route path="/facility/tampa" element={<FacilityTampa />} />
