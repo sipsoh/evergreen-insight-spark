@@ -3,8 +3,9 @@ import { Navigation } from "@/components/Navigation";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { MapPin, Phone, Mail, ExternalLink, Calendar, FileText, CheckSquare } from "lucide-react";
+import { MapPin, Phone, Mail, ExternalLink, FileText } from "lucide-react";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import { GoogleMap } from "@/components/GoogleMap";
 import facilityImage from "@/assets/facility-tampa.jpg";
 
 const FacilityTampa = () => {
@@ -195,44 +196,8 @@ const FacilityTampa = () => {
               </CardContent>
             </Card>
 
-            {/* In My Court Tasks */}
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <CheckSquare className="h-5 w-5 text-primary" />
-                  In My Court - Action Items
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-3">
-                  {[
-                    { task: "Hurricane Preparedness Review", due: "Dec 20", priority: "High" },
-                    { task: "Census Growth Strategy Meeting", due: "Dec 17", priority: "Medium" },
-                    { task: "Facility Tour Follow-ups", due: "Dec 16", priority: "High" },
-                    { task: "Staff Recognition Awards", due: "Dec 30", priority: "Medium" },
-                  ].map((item, index) => (
-                    <div key={index} className="flex items-center justify-between p-3 border rounded-lg hover:bg-accent/50 transition-colors">
-                      <div className="flex items-start gap-3">
-                        <div className="h-5 w-5 rounded border-2 border-muted-foreground mt-0.5" />
-                        <div>
-                          <p className="font-medium text-sm">{item.task}</p>
-                          <p className="text-xs text-muted-foreground flex items-center gap-1 mt-1">
-                            <Calendar className="h-3 w-3" />
-                            Due: {item.due}
-                          </p>
-                        </div>
-                      </div>
-                      <Badge 
-                        variant={item.priority === "High" ? "destructive" : "secondary"}
-                        className="text-xs"
-                      >
-                        {item.priority}
-                      </Badge>
-                    </div>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
+            {/* Location Map */}
+            <GoogleMap address="14950 Casey Road, Tampa, FL 33624" />
 
             {/* Documents & Quick Links */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
