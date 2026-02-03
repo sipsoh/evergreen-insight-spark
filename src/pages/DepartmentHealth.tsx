@@ -58,13 +58,23 @@ const hubTiles = [
     gradient: "from-blue-600 to-blue-800",
     description: "Current divisional projects and goals"
   },
+  {
+    title: "Nurse Leader Orientation",
+    icon: Users,
+    gradient: "from-indigo-600 to-indigo-800",
+    description: "Orientation support for nurse leaders"
+  },
+  {
+    title: "Dementia Training Support",
+    icon: Heart,
+    gradient: "from-purple-600 to-purple-800",
+    description: "Training resources for dementia care"
+  },
 ];
 
 const specialists = [
-  { name: "Jennifer Adams", role: "Director of Health & Wellness", initials: "JA" },
-  { name: "Robert Chen", role: "Clinical Operations Manager", initials: "RC" },
-  { name: "Maria Santos", role: "Quality Assurance Lead", initials: "MS" },
-  { name: "David Thompson", role: "Regulatory Compliance Officer", initials: "DT" },
+  { name: "Karen Maselli", role: "Health & Wellness", initials: "KM" },
+  { name: "Brian Schucker", role: "Health & Wellness", initials: "BS" },
 ];
 
 const DepartmentHealth = () => {
@@ -89,7 +99,7 @@ const DepartmentHealth = () => {
       {/* Main Content */}
       <div className="container px-6 py-8">
         {/* Hub Tiles Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
           {hubTiles.map((tile, index) => {
             const Icon = tile.icon;
             return (
@@ -108,19 +118,7 @@ const DepartmentHealth = () => {
         </div>
 
         {/* Quick Actions Row */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
-          <Card className="bg-gradient-to-r from-cyan-50 to-teal-50 border-teal-200">
-            <CardContent className="p-6 flex items-center gap-4">
-              <div className="h-12 w-12 rounded-full bg-teal-100 flex items-center justify-center">
-                <Globe className="h-6 w-6 text-teal-600" />
-              </div>
-              <div>
-                <h3 className="font-semibold">IT Infrastructure Transition Site</h3>
-                <p className="text-sm text-muted-foreground">Access transition resources</p>
-              </div>
-            </CardContent>
-          </Card>
-
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
           <Card className="bg-gradient-to-r from-purple-50 to-indigo-50 border-purple-200">
             <CardContent className="p-6 flex flex-col items-center gap-3">
               <Button className="bg-purple-600 hover:bg-purple-700 w-full">
@@ -239,7 +237,7 @@ const DepartmentHealth = () => {
                   <Mail className="h-5 w-5 text-teal-600 mt-0.5" />
                   <div>
                     <p className="font-medium text-sm">Email</p>
-                    <p className="text-sm text-muted-foreground">hw@egmgmt.com</p>
+                    <p className="text-sm text-muted-foreground">bschucker@egmgmt.com</p>
                   </div>
                 </div>
                 
@@ -289,20 +287,16 @@ const DepartmentHealth = () => {
               </CardHeader>
               <CardContent className="space-y-2">
                 <Button variant="outline" className="w-full justify-start" size="sm">
-                  <Heart className="h-4 w-4 mr-2 text-teal-600" />
-                  Wellness Programs
-                </Button>
-                <Button variant="outline" className="w-full justify-start" size="sm">
-                  <Shield className="h-4 w-4 mr-2 text-teal-600" />
-                  Compliance Portal
-                </Button>
-                <Button variant="outline" className="w-full justify-start" size="sm">
-                  <BookOpen className="h-4 w-4 mr-2 text-teal-600" />
-                  Training Materials
-                </Button>
-                <Button variant="outline" className="w-full justify-start" size="sm">
                   <FileText className="h-4 w-4 mr-2 text-teal-600" />
-                  Policy Documents
+                  Request to Preserve Video
+                </Button>
+                <Button variant="outline" className="w-full justify-start" size="sm">
+                  <Users className="h-4 w-4 mr-2 text-teal-600" />
+                  Nurse Leader Orientation Support
+                </Button>
+                <Button variant="outline" className="w-full justify-start" size="sm">
+                  <Heart className="h-4 w-4 mr-2 text-teal-600" />
+                  Dementia Training Support
                 </Button>
               </CardContent>
             </Card>
