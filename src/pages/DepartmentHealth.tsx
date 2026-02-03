@@ -6,17 +6,17 @@ import { Button } from "@/components/ui/button";
 import { 
   FileText, 
   Phone, 
-  Globe, 
+  Globe,
   Heart, 
   BookOpen, 
   Shield, 
   Lightbulb, 
   Target, 
   Users, 
-  ExternalLink,
   Megaphone,
   ClipboardList,
-  Mail
+  Mail,
+  Lock
 } from "lucide-react";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Alert, AlertDescription } from "@/components/ui/alert";
@@ -135,11 +135,11 @@ const DepartmentHealth = () => {
           <Card className="bg-gradient-to-r from-green-50 to-emerald-50 border-green-200">
             <CardContent className="p-6 flex items-center gap-4">
               <div className="h-12 w-12 rounded-full bg-green-100 flex items-center justify-center">
-                <Users className="h-6 w-6 text-green-600" />
+                <Lock className="h-6 w-6 text-green-600" />
               </div>
               <div>
                 <h3 className="font-semibold">Health & Wellness Specialists</h3>
-                <p className="text-sm text-muted-foreground">Meet our team</p>
+                <p className="text-sm text-muted-foreground">Document repository & audit tools (restricted access)</p>
               </div>
             </CardContent>
           </Card>
