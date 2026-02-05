@@ -74,8 +74,8 @@ const quickLinks = [
 ];
 
 const teamMembers = [
-  { name: "Marketing Director", role: "Marketing", initials: "MD" },
-  { name: "Marketing Coordinator", role: "Marketing", initials: "MC" },
+  { name: "Dawn Melanson", role: "Marketing", initials: "DM", email: "DMelanson@egmgmt.com" },
+  { name: "Cassandra Love", role: "Marketing", initials: "CL", email: "clove@egmgmt.com" },
 ];
 
 const DepartmentMarketing = () => {
@@ -320,7 +320,7 @@ const DepartmentMarketing = () => {
                 <CardTitle className="text-lg">Marketing Team</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
-                {teamMembers.map((member, index) => (
+              {teamMembers.map((member, index) => (
                   <div key={index} className="flex items-start gap-3">
                     <Avatar className="h-12 w-12 border-2 border-pink-600/20">
                       <AvatarFallback className="bg-pink-600/10 text-pink-600 font-semibold">
@@ -329,7 +329,7 @@ const DepartmentMarketing = () => {
                     </Avatar>
                     <div className="flex-1">
                       <h3 className="font-semibold text-sm">{member.name}</h3>
-                      <p className="text-xs text-muted-foreground">{member.role}</p>
+                      <p className="text-xs text-muted-foreground">{member.email}</p>
                     </div>
                   </div>
                 ))}
@@ -361,27 +361,6 @@ const DepartmentMarketing = () => {
               </CardContent>
             </Card>
 
-            {/* Upcoming Campaigns */}
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-lg flex items-center gap-2">
-                  <Calendar className="h-5 w-5 text-pink-600" />
-                  Upcoming Campaigns
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-3">
-                {[
-                  { campaign: "Winter Wellness Campaign", date: "Jan 2025" },
-                  { campaign: "Valentine's Day Promotion", date: "Feb 2025" },
-                  { campaign: "Spring Open House", date: "Mar 2025" },
-                ].map((item, index) => (
-                  <div key={index} className="border-b pb-3 last:border-0 last:pb-0">
-                    <h4 className="font-semibold text-sm">{item.campaign}</h4>
-                    <p className="text-xs text-muted-foreground">{item.date}</p>
-                  </div>
-                ))}
-              </CardContent>
-            </Card>
           </div>
         </div>
       </div>
