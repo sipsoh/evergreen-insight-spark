@@ -11,6 +11,7 @@ import AllFacilities from "./pages/AllFacilities";
 import DepartmentHR from "./pages/DepartmentHR";
 import DepartmentIT from "./pages/DepartmentIT";
 import DepartmentHealth from "./pages/DepartmentHealth";
+import DepartmentMarketing from "./pages/DepartmentMarketing";
 import EmployeeDirectory from "./pages/EmployeeDirectory";
 import Documents from "./pages/Documents";
 import NotFound from "./pages/NotFound";
@@ -32,6 +33,7 @@ const App = () => (
           <Route path="/departments/hr" element={<DepartmentHR />} />
           <Route path="/departments/it" element={<DepartmentIT />} />
           <Route path="/departments/health" element={<DepartmentHealth />} />
+          <Route path="/departments/marketing" element={<DepartmentMarketing />} />
           <Route path="/employees" element={<EmployeeDirectory />} />
           <Route path="/documents" element={<Documents />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
