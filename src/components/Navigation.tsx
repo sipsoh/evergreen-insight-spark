@@ -23,7 +23,7 @@ const departmentLinks = [
   { label: "Health & Wellness", path: "/departments/health" },
   { label: "Operations", path: "/departments/operations" },
   { label: "Finance & Accounting", path: "/departments/finance" },
-  { label: "Sales & Marketing", path: "/departments/marketing" },
+  { label: "Marketing", path: "/departments/marketing" },
 ];
 
 const facilityLinks = [
